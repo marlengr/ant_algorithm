@@ -1,0 +1,9 @@
+c:\users\lenka\documents\visual studio 2015\Projects\ant algh\ant algh\bin\Debug\ant algh.exe.config
+c:\users\lenka\documents\visual studio 2015\Projects\ant algh\ant algh\obj\Debug\ant algh.csprojResolveAssemblyReference.cache
+c:\users\lenka\documents\visual studio 2015\Projects\ant algh\ant algh\obj\Debug\ant_algh.Form1.resources
+c:\users\lenka\documents\visual studio 2015\Projects\ant algh\ant algh\obj\Debug\ant_algh.Properties.Resources.resources
+c:\users\lenka\documents\visual studio 2015\Projects\ant algh\ant algh\obj\Debug\ant algh.csproj.GenerateResource.Cache
+c:\users\lenka\documents\visual studio 2015\Projects\ant algh\ant algh\bin\Debug\ant algh.exe
+c:\users\lenka\documents\visual studio 2015\Projects\ant algh\ant algh\bin\Debug\ant algh.pdb
+c:\users\lenka\documents\visual studio 2015\Projects\ant algh\ant algh\obj\Debug\ant algh.exe
+c:\users\lenka\documents\visual studio 2015\Projects\ant algh\ant algh\obj\Debug\ant algh.pdb

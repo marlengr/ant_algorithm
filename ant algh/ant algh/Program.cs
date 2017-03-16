@@ -25,7 +25,7 @@ namespace ant_algh
                 //MessageBox.Show("utworzono watek");
             }
             // antsList[0].antThread.robcos//dostep do danej mrowki po indeksie z listy
-            
+
         }
     }
 }

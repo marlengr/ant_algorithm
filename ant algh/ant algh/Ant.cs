@@ -21,6 +21,7 @@ namespace ant_algh
         public Ant()
         {
             antThread = new Thread(doSomething);
+            //MessageBox.Show("utworzono watek");
         }
 
 
@@ -36,15 +37,7 @@ namespace ant_algh
 
         }
 
-        public static void newThread()
-            {
-            for (int i = 1; i < 15; i++)
-            {
-                Thread ant = new Thread(doSomething);
-                MessageBox.Show("utworzyles watek");
-                
-            }
-            }
+       
               
         Graphics g;
         //jak sie dostac do niestatycznej metody??

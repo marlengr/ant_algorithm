@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,14 +18,47 @@ namespace ant_algh
 
     public partial class Form1 : Form
     {
-
-        Ant ant = new Ant();
+        private Image img;
+        private Ant ant;
+        //Ant ant = new Ant();
 
         public Form1()
         {
             InitializeComponent();
+            img = Image.FromFile("ant.png");
+            Ant ant = new Ant();
+            pictureBox2.Image = img;
         }
 
+        public static Image RotateImage(Image img, float rotationAngle)
+        {
+            //create an empty Bitmap image
+            Bitmap bmp = new Bitmap(img.Width, img.Height);
+
+            //turn the Bitmap into a Graphics object
+            Graphics gfx = Graphics.FromImage(bmp);
+
+            //now we set the rotation point to the center of our image
+            gfx.TranslateTransform((float)bmp.Width / 2, (float)bmp.Height / 2);
+
+            //now rotate the image
+            gfx.RotateTransform(rotationAngle);
+
+            gfx.TranslateTransform(-(float)bmp.Width / 2, -(float)bmp.Height / 2);
+
+            //set the InterpolationMode to HighQualityBicubic so to ensure a high
+            //quality image once it is transformed to the specified size
+            gfx.InterpolationMode = InterpolationMode.HighQualityBicubic;
+
+            //now draw our new image onto the graphics object
+            gfx.DrawImage(img, new Point(0, 0));
+
+            //dispose of our Graphics object
+            gfx.Dispose();
+
+            //return the image
+            return bmp;
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -93,7 +127,14 @@ namespace ant_algh
 
         public void button2_Click(object sender, EventArgs e)
         {
-           
+            img = RotateImage(img, 15);
+            pictureBox2.Image = img;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            img = RotateImage(img, -15);
+            pictureBox2.Image = img;
         }
     }
 }

@@ -17,6 +17,15 @@ namespace ant_algh
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+            List<Ant> antsList = new List<Ant>();
+            for (int i = 1; i < 10; i++)
+            {
+                antsList.Add(new Ant());
+                //MessageBox.Show("utworzono watek");
+            }
+            // antsList[0].antThread.robcos//dostep do danej mrowki po indeksie z listy
+            
         }
     }
 }

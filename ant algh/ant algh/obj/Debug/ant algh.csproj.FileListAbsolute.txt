@@ -7,3 +7,12 @@ c:\users\lenka\documents\visual studio 2015\Projects\ant algh\ant algh\bin\Debug
 c:\users\lenka\documents\visual studio 2015\Projects\ant algh\ant algh\bin\Debug\ant algh.pdb
 c:\users\lenka\documents\visual studio 2015\Projects\ant algh\ant algh\obj\Debug\ant algh.exe
 c:\users\lenka\documents\visual studio 2015\Projects\ant algh\ant algh\obj\Debug\ant algh.pdb
+C:\Users\lenka\Documents\GitHub\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe.config
+C:\Users\lenka\Documents\GitHub\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.exe
+C:\Users\lenka\Documents\GitHub\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.pdb
+C:\Users\lenka\Documents\GitHub\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csprojResolveAssemblyReference.cache
+C:\Users\lenka\Documents\GitHub\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.Form1.resources
+C:\Users\lenka\Documents\GitHub\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.Properties.Resources.resources
+C:\Users\lenka\Documents\GitHub\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csproj.GenerateResource.Cache
+C:\Users\lenka\Documents\GitHub\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe
+C:\Users\lenka\Documents\GitHub\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.pdb

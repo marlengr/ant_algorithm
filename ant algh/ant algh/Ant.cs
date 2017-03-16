@@ -9,15 +9,52 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 
+
+
 namespace ant_algh
 {
     class Ant
     {
-        private Thread ant1;
 
+        public Thread antThread;
+
+        public Ant()
+        {
+            antThread = new Thread(doSomething);
+        }
+
+
+        public static void doSomething()
+        {
+            //Graphics myGraphics = base.CreateGraphics();
+            //Pen myPen = new Pen(Color.Red);
+            //SolidBrush mySolidBrush = new SolidBrush(Color.Red);
+            //yGraphics.DrawEllipse(myPen, 10, 10, 10, 10);
+
+            // for (int i = 0; i <= 1; i++)
+            //   MessageBox.Show("utworzyles watek");
+
+        }
+
+        public static void newThread()
+            {
+            for (int i = 1; i < 15; i++)
+            {
+                Thread ant = new Thread(doSomething);
+                MessageBox.Show("utworzyles watek");
+                
+            }
+            }
+              
+        Graphics g;
+        //jak sie dostac do niestatycznej metody??
         public void Run()
         {
+            Pen myPen = new Pen(Color.Black);
+            SolidBrush mySolidBrush = new SolidBrush(Color.Red);
+            g.DrawEllipse(myPen, 10, 10, 10, 10);
         }
+        
 
     }
 }

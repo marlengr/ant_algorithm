@@ -9,26 +9,33 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 
+
+
 namespace ant_algh
 {
+
+
     public partial class Form1 : Form
     {
+
+        Ant ant = new Ant();
+
         public Form1()
         {
-            InitializeComponent();            
-        }       
-
-        
-        private void Form1_Load(object sender, EventArgs e)
-        {            
+            InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
+
+        public void button1_Click(object sender, EventArgs e)
         {
             Bitmap drawingAnthill = new Bitmap(723, 370);
             Graphics drawAnt = Graphics.FromImage(drawingAnthill);
-            Random rnd = new Random();
-            /* for (int i = 0; i < 0; i++)
+            /*Random rnd = new Random();
+                for (int i = 0; i < 0; i++)
              {
                  // calculate line start and end point here using the Random class:
                  int x0 = rnd.Next(0, drawingAnthill.Width);
@@ -36,8 +43,8 @@ namespace ant_algh
                  int x1 = rnd.Next(0, drawingAnthill.Width);
                  int y1 = rnd.Next(0, drawingAnthill.Height);
                  drawAnt.DrawLine(Pens.Black, x0, y0, x1, x1);
-             }*/
-
+             }
+             */
             drawAnt.FillEllipse(Brushes.Black, 350, 200, 15, 15);
             drawAnt.FillEllipse(Brushes.Black, 200, 100, 15, 15);
             drawAnt.FillEllipse(Brushes.Black, 300, 150, 15, 15);
@@ -82,12 +89,12 @@ namespace ant_algh
 
             pictureBox1.Image = drawingAnthill;
         }
-       
 
-        private void button2_Click(object sender, EventArgs e)
+
+        public void button2_Click(object sender, EventArgs e)
         {
-            
+           
         }
     }
-    }
+}
 

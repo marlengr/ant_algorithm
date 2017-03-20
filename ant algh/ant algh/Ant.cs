@@ -17,6 +17,9 @@ namespace ant_algh
     {
 
         public Thread antThread;
+        public int X = 0;
+        public int Y = 0;
+        public static bool Run = false;
 
         public Ant()
         {
@@ -24,30 +27,28 @@ namespace ant_algh
             //MessageBox.Show("utworzono watek");
         }
 
-
-        public static void doSomething()
+        public Ant(int x, int y)
         {
-            //Graphics myGraphics = base.CreateGraphics();
-            //Pen myPen = new Pen(Color.Red);
-            //SolidBrush mySolidBrush = new SolidBrush(Color.Red);
-            //yGraphics.DrawEllipse(myPen, 10, 10, 10, 10);
+            X = x;
+            Y = y;
+            antThread = new Thread(doSomething);
+            //MessageBox.Show("utworzono watek");
+        }
 
-            // for (int i = 0; i <= 1; i++)
-            //   MessageBox.Show("utworzyles watek");
 
+        public void doSomething()
+        {
+            while (Run)
+            {
+                Random r = new Random();
+                X = r.Next(100);
+                Y = r.Next(100);
+                Thread.Sleep(2000);
+            }
         }
 
        
-              
-        Graphics g;
-        //jak sie dostac do niestatycznej metody??
-        public void Run()
-        {
-            Pen myPen = new Pen(Color.Black);
-            SolidBrush mySolidBrush = new SolidBrush(Color.Red);
-            g.DrawEllipse(myPen, 10, 10, 10, 10);
-        }
-        
+
 
     }
 }

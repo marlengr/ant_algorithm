@@ -18,16 +18,15 @@ namespace ant_algh
 
     public partial class Form1 : Form
     {
-        private Image img;
-        private Ant ant;
-        //Ant ant = new Ant();
+        World World = new World();
+
 
         public Form1()
         {
             InitializeComponent();
-            img = Image.FromFile("ant.png");
-            Ant ant = new Ant();
-            pictureBox2.Image = img;
+            //img = Image.FromFile("ant.png");
+            //Ant ant = new Ant();
+            //pictureBox2.Image = img;
         }
 
         public static Image RotateImage(Image img, float rotationAngle)
@@ -66,75 +65,59 @@ namespace ant_algh
 
         public void button1_Click(object sender, EventArgs e)
         {
-            Bitmap drawingAnthill = new Bitmap(723, 370);
-            Graphics drawAnt = Graphics.FromImage(drawingAnthill);
-            /*Random rnd = new Random();
-                for (int i = 0; i < 0; i++)
-             {
-                 // calculate line start and end point here using the Random class:
-                 int x0 = rnd.Next(0, drawingAnthill.Width);
-                 int y0 = rnd.Next(0, drawingAnthill.Height);
-                 int x1 = rnd.Next(0, drawingAnthill.Width);
-                 int y1 = rnd.Next(0, drawingAnthill.Height);
-                 drawAnt.DrawLine(Pens.Black, x0, y0, x1, x1);
-             }
-             */
-            drawAnt.FillEllipse(Brushes.Black, 350, 200, 15, 15);
-            drawAnt.FillEllipse(Brushes.Black, 200, 100, 15, 15);
-            drawAnt.FillEllipse(Brushes.Black, 300, 150, 15, 15);
-            drawAnt.FillEllipse(Brushes.Red, 50, 200, 20, 20);
-            drawAnt.FillEllipse(Brushes.Red, 660, 220, 20, 20);
-            drawAnt.FillEllipse(Brushes.Black, 550, 300, 15, 15);
-            drawAnt.FillEllipse(Brushes.Black, 600, 130, 15, 15);
-            drawAnt.FillEllipse(Brushes.Black, 500, 140, 15, 15);
-            drawAnt.FillEllipse(Brushes.Black, 400, 250, 15, 15);
-            drawAnt.FillEllipse(Brushes.Black, 200, 300, 15, 15);
-            drawAnt.FillEllipse(Brushes.Black, 500, 200, 15, 15);
-            drawAnt.FillEllipse(Brushes.Black, 390, 50, 15, 15);
-            drawAnt.FillEllipse(Brushes.Black, 140, 190, 15, 15);
+            Ant.Run = true;
 
-            Pen p = new Pen(Color.Black);
-            p.Width = 5;
-            Point p1 = new Point(350, 200);
-            Point p2 = new Point(200, 100);
-            Point p3 = new Point(300, 150);
-            Point p4 = new Point(50, 200);
-            Point p5 = new Point(660, 220);
-            Point p6 = new Point(550, 300);
-            Point p7 = new Point(600, 130);
-            Point p8 = new Point(500, 140);
-            Point p9 = new Point(400, 250);
-            Point p10 = new Point(200, 300);
-            Point p11 = new Point(500, 200);
-            Point p12 = new Point(390, 50);
-            Point p13 = new Point(140, 190);
+            for (int i = 0; i < World.Ants.Count; i++)
+            {
+               World.Ants[i].antThread.Start();
+            }
 
-            /*drawAnt.DrawLine(p, p1, p2);
-            drawAnt.DrawLine(p, p2, p3);
-            drawAnt.DrawLine(p, p3, p4);
-            drawAnt.DrawLine(p, p4, p5);
-            drawAnt.DrawLine(p, p5, p6);
-            drawAnt.DrawLine(p, p6, p7);
-            drawAnt.DrawLine(p, p7, p8);
-            drawAnt.DrawLine(p, p8, p9);
-            drawAnt.DrawLine(p, p9, p10);*/
 
-            drawAnt.Dispose();
 
-            pictureBox1.Image = drawingAnthill;
         }
 
 
         public void button2_Click(object sender, EventArgs e)
         {
-            img = RotateImage(img, 15);
-            pictureBox2.Image = img;
+            Ant.Run = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            img = RotateImage(img, -15);
-            pictureBox2.Image = img;
+            pictureBox1.Refresh();
+      
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Paint(object sender, PaintEventArgs e)
+        {
+            //Graphics g = Graphics.FromImage(pictureBox1.Image);
+            
+
+
+            Pen p = new Pen(Color.Black);
+            p.Width = 5;
+
+            World.Generate();
+            if (World.Ants.Count != 0)
+            {
+                for (int x = 0; x < World.Ants.Count; x++)
+                {
+                    Point p1 = new Point(World.Ants[x].X, World.Ants[x].Y);
+                    //e.Graphics.DrawLine(p, p1, p1);
+
+                    Pen myPen = new Pen(Color.Black);
+                    SolidBrush mySolidBrush = new SolidBrush(Color.Red);
+                    e.Graphics.DrawEllipse(myPen, p1.X, p1.Y, p1.X+5, p1.Y+5);
+
+
+                }
+            }
+
         }
     }
 }

@@ -16,3 +16,15 @@ C:\Users\lenka\Documents\GitHub\ant_algorithm\ant algh\ant algh\obj\Debug\ant_al
 C:\Users\lenka\Documents\GitHub\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csproj.GenerateResource.Cache
 C:\Users\lenka\Documents\GitHub\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe
 C:\Users\lenka\Documents\GitHub\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.pdb
+C:\Users\Adam\Desktop\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe.config
+C:\Users\Adam\Desktop\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.exe
+C:\Users\Adam\Desktop\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.pdb
+C:\Users\Adam\Desktop\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe
+C:\Users\Adam\Desktop\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.pdb
+C:\Users\Adam\Desktop\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csprojResolveAssemblyReference.cache
+C:\Users\Adam\Desktop\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.Form1.resources
+C:\Users\Adam\Desktop\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.Properties.Resources.resources
+C:\Users\Adam\Desktop\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csproj.GenerateResource.Cache
+H:\ant_algorithm new\ant algh\ant algh\bin\Debug\ant algh.exe.config
+H:\ant_algorithm new\ant algh\ant algh\obj\Debug\ant algh.exe
+H:\ant_algorithm new\ant algh\ant algh\obj\Debug\ant algh.pdb

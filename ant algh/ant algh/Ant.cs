@@ -13,7 +13,7 @@ using System.Threading;
 
 namespace ant_algh
 {
-    class Ant
+    public class Ant
     {
 
         public Thread antThread;
@@ -34,6 +34,23 @@ namespace ant_algh
             antThread = new Thread(doSomething);
             //MessageBox.Show("utworzono watek");
         }
+
+        PictureBox pictureBox1 = new PictureBox();
+        public void drawAnt()
+        {
+            pictureBox1.Size = new Size(730, 370);
+            //this.Add(pictureBox1);
+            Bitmap bitmap = new Bitmap(730, 370);
+
+            Pen p = new Pen(Color.Black);
+            Graphics drawAnt = Graphics.FromImage(bitmap);
+            drawAnt.FillEllipse(Brushes.Black, 350, 200, 5, 5);
+            drawAnt.DrawLine(p, 353, 200, 370, 190);
+            pictureBox1.Image = bitmap;
+            //Form1.pictureBox1.Image = drawingAnthill;
+
+        }
+
 
 
         public void doSomething()

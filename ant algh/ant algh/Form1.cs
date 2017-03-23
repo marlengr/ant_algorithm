@@ -18,6 +18,7 @@ namespace ant_algh
 
     public partial class Form1 : Form
     {
+        Ant Ant = new Ant();
         World World = new World();
 
 
@@ -71,11 +72,7 @@ namespace ant_algh
             {
                World.Ants[i].antThread.Start();
             }
-
-
-
         }
-
 
         public void button2_Click(object sender, EventArgs e)
         {
@@ -84,8 +81,7 @@ namespace ant_algh
 
         private void button3_Click(object sender, EventArgs e)
         {
-            pictureBox1.Refresh();
-      
+            Ant.drawAnt();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -96,9 +92,6 @@ namespace ant_algh
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
             //Graphics g = Graphics.FromImage(pictureBox1.Image);
-            
-
-
             Pen p = new Pen(Color.Black);
             p.Width = 5;
 
@@ -108,11 +101,14 @@ namespace ant_algh
                 for (int x = 0; x < World.Ants.Count; x++)
                 {
                     Point p1 = new Point(World.Ants[x].X, World.Ants[x].Y);
-                    //e.Graphics.DrawLine(p, p1, p1);
+                    Point p2 = new Point(World.Ants[x].X + 10, World.Ants[x].Y + 10);
+                    
 
-                    Pen myPen = new Pen(Color.Black);
-                    SolidBrush mySolidBrush = new SolidBrush(Color.Red);
-                    e.Graphics.DrawEllipse(myPen, p1.X, p1.Y, p1.X+5, p1.Y+5);
+                    e.Graphics.DrawLine(p, p1, p1);
+
+                    //Pen myPen = new Pen(Color.Black);
+                    //SolidBrush mySolidBrush = new SolidBrush(Color.Red);
+                    //e.Graphics.DrawEllipse(myPen, p1.X, p1.Y, p1.X+5, p1.Y+5);
 
 
                 }

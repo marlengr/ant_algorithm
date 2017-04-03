@@ -28,3 +28,21 @@ C:\Users\Adam\Desktop\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csproj.
 H:\ant_algorithm new\ant algh\ant algh\bin\Debug\ant algh.exe.config
 H:\ant_algorithm new\ant algh\ant algh\obj\Debug\ant algh.exe
 H:\ant_algorithm new\ant algh\ant algh\obj\Debug\ant algh.pdb
+C:\Users\Bartek\Downloads\ant_algorithm-master\ant algh\ant algh\bin\Debug\ant algh.exe.config
+C:\Users\Bartek\Downloads\ant_algorithm-master\ant algh\ant algh\bin\Debug\ant algh.exe
+C:\Users\Bartek\Downloads\ant_algorithm-master\ant algh\ant algh\bin\Debug\ant algh.pdb
+C:\Users\Bartek\Downloads\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant algh.csprojResolveAssemblyReference.cache
+C:\Users\Bartek\Downloads\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant_algh.Form1.resources
+C:\Users\Bartek\Downloads\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant_algh.Properties.Resources.resources
+C:\Users\Bartek\Downloads\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant algh.csproj.GenerateResource.Cache
+C:\Users\Bartek\Downloads\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant algh.exe
+C:\Users\Bartek\Downloads\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant algh.pdb
+C:\Users\lenka\Desktop\ant_algorithm-master\ant_algorithm-master\ant algh\ant algh\bin\Debug\ant algh.exe.config
+C:\Users\lenka\Desktop\ant_algorithm-master\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant algh.exe
+C:\Users\lenka\Desktop\ant_algorithm-master\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant algh.pdb
+C:\Users\lenka\Desktop\ant_algorithm-master\ant_algorithm-master\ant algh\ant algh\bin\Debug\ant algh.exe
+C:\Users\lenka\Desktop\ant_algorithm-master\ant_algorithm-master\ant algh\ant algh\bin\Debug\ant algh.pdb
+C:\Users\lenka\Desktop\ant_algorithm-master\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant algh.csprojResolveAssemblyReference.cache
+C:\Users\lenka\Desktop\ant_algorithm-master\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant_algh.Form1.resources
+C:\Users\lenka\Desktop\ant_algorithm-master\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant_algh.Properties.Resources.resources
+C:\Users\lenka\Desktop\ant_algorithm-master\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant algh.csproj.GenerateResource.Cache

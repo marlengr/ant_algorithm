@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Threading;
 
 namespace ant_algh
 {
@@ -13,11 +13,23 @@ namespace ant_algh
         public Food Food = new Food();
         public List<Ant> Ants = new List<Ant>();
 
-        public void Generate() {
-            for (int i = 1; i < 10; i++)
+        Random rnd = new Random();
+        public int random1(int maxValue)
+        {
+            maxValue = rnd.Next(1,700);
+            return maxValue;
+        }
+        public int random2(int minValue)
+        {
+            minValue = rnd.Next(1,300);
+            return minValue;
+        }
+
+        public void Generate(int antsNumber) {
+            for (int i = 0; i < antsNumber; i++)
             {
-                Ants.Add(new Ant(30+i,30+i));
-                //MessageBox.Show("utworzono watek");
+                Ant ant = new Ant(50 + i * 10, 50 + i * 10);
+                Ants.Add(ant);
             }
         }
     }

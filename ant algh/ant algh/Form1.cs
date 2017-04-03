@@ -1,119 +1,97 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 
-
-
 namespace ant_algh
 {
-
-
     public partial class Form1 : Form
     {
-        Ant Ant = new Ant();
-        World World = new World();
+        private World World;
+        private int counter;
+        private Pen p;
+        private Bitmap bmp;
+        private Graphics g;
 
-
+        
+        
         public Form1()
         {
             InitializeComponent();
-            //img = Image.FromFile("ant.png");
-            //Ant ant = new Ant();
-            //pictureBox2.Image = img;
+            bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            g = Graphics.FromImage(bmp);
+            g.Clear(Color.White);
+            p = new Pen(Color.Black);
+            p.Width = 5;
+            counter = 0;
+            World = new World();
+            World.Generate(4);
+           
         }
 
-        public static Image RotateImage(Image img, float rotationAngle)
-        {
-            //create an empty Bitmap image
-            Bitmap bmp = new Bitmap(img.Width, img.Height);
 
-            //turn the Bitmap into a Graphics object
-            Graphics gfx = Graphics.FromImage(bmp);
-
-            //now we set the rotation point to the center of our image
-            gfx.TranslateTransform((float)bmp.Width / 2, (float)bmp.Height / 2);
-
-            //now rotate the image
-            gfx.RotateTransform(rotationAngle);
-
-            gfx.TranslateTransform(-(float)bmp.Width / 2, -(float)bmp.Height / 2);
-
-            //set the InterpolationMode to HighQualityBicubic so to ensure a high
-            //quality image once it is transformed to the specified size
-            gfx.InterpolationMode = InterpolationMode.HighQualityBicubic;
-
-            //now draw our new image onto the graphics object
-            gfx.DrawImage(img, new Point(0, 0));
-
-            //dispose of our Graphics object
-            gfx.Dispose();
-
-            //return the image
-            return bmp;
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-        }
-
-        public void button1_Click(object sender, EventArgs e)
+        public void buttonStart_click(object sender, EventArgs e)
         {
             Ant.Run = true;
 
             for (int i = 0; i < World.Ants.Count; i++)
             {
-               World.Ants[i].antThread.Start();
+                World.Ants[i].AntThread.Start();
+                while (!World.Ants[i].AntThread.IsAlive)
+                {
+                    Thread.Sleep(1);
+                }
+
             }
         }
 
-        public void button2_Click(object sender, EventArgs e)
+        public void buttonStop_Click(object sender, EventArgs e)
         {
+                
+            for (int i = 0; i < World.Ants.Count; i++)
+            {
+                World.Ants[i].AntThread.Abort();
+            }
             Ant.Run = false;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonRefresh_Click(object sender, EventArgs e)
         {
-            Ant.drawAnt();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
+            World.Ants.Clear();
+            World.Generate(5);
         }
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
-            //Graphics g = Graphics.FromImage(pictureBox1.Image);
-            Pen p = new Pen(Color.Black);
-            p.Width = 5;
-
-            World.Generate();
             if (World.Ants.Count != 0)
             {
+                
+                g.Clear(Color.White);
                 for (int x = 0; x < World.Ants.Count; x++)
                 {
-                    Point p1 = new Point(World.Ants[x].X, World.Ants[x].Y);
-                    Point p2 = new Point(World.Ants[x].X + 10, World.Ants[x].Y + 10);
                     
+                    Point p1 = new Point(World.Ants[x].X, World.Ants[x].Y);
+                    Point p2 = new Point(World.Ants[x].X + 50, World.Ants[x].Y + 50);
 
-                    e.Graphics.DrawLine(p, p1, p1);
-
-                    //Pen myPen = new Pen(Color.Black);
-                    //SolidBrush mySolidBrush = new SolidBrush(Color.Red);
-                    //e.Graphics.DrawEllipse(myPen, p1.X, p1.Y, p1.X+5, p1.Y+5);
-
-
+                    Font drawFont = new Font("Arial", 8);
+                    SolidBrush drawBrush = new SolidBrush(Color.Fuchsia);
+                    g.DrawEllipse(p, World.Ants[x].X, World.Ants[x].Y, 5, 5);
+                    g.DrawString(x.ToString(), drawFont, drawBrush, World.Ants[x].X + 25, World.Ants[x].Y - 5);
                 }
+                pictureBox1.Image = bmp;
             }
-
+           
+        }
+        
+        private void buttonAddAnt_Click(object sender, EventArgs e)
+        {                   
+            Ant ant = new Ant(World.random1(300), World.random2(750));
+            World.Ants.Add(ant);
+            /*ant.AntThread.Start();
+            while (!ant.AntThread.IsAlive)
+            {
+                Thread.Sleep(1);
+            }*/
         }
     }
 }

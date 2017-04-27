@@ -46,3 +46,12 @@ C:\Users\lenka\Desktop\ant_algorithm-master\ant_algorithm-master\ant algh\ant al
 C:\Users\lenka\Desktop\ant_algorithm-master\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant_algh.Form1.resources
 C:\Users\lenka\Desktop\ant_algorithm-master\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant_algh.Properties.Resources.resources
 C:\Users\lenka\Desktop\ant_algorithm-master\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant algh.csproj.GenerateResource.Cache
+C:\Users\lenka\Desktop\ANT NEW\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe.config
+C:\Users\lenka\Desktop\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.exe
+C:\Users\lenka\Desktop\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.pdb
+C:\Users\lenka\Desktop\ANT NEW\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe
+C:\Users\lenka\Desktop\ANT NEW\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.pdb
+C:\Users\lenka\Desktop\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csprojResolveAssemblyReference.cache
+C:\Users\lenka\Desktop\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.Form1.resources
+C:\Users\lenka\Desktop\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.Properties.Resources.resources
+C:\Users\lenka\Desktop\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csproj.GenerateResource.Cache

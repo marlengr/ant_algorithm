@@ -33,6 +33,7 @@
             this.StopButton = new System.Windows.Forms.Button();
             this.refreshButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.moveButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,11 +86,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.buttonAddAnt_Click);
             // 
+            // moveButton
+            // 
+            this.moveButton.Location = new System.Drawing.Point(270, 389);
+            this.moveButton.Name = "moveButton";
+            this.moveButton.Size = new System.Drawing.Size(75, 23);
+            this.moveButton.TabIndex = 7;
+            this.moveButton.Text = "button2";
+            this.moveButton.UseVisualStyleBackColor = true;
+            this.moveButton.Click += new System.EventHandler(this.moveButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(747, 423);
+            this.Controls.Add(this.moveButton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.StopButton);
@@ -108,6 +120,7 @@
         private System.Windows.Forms.Button refreshButton;
         public System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button moveButton;
     }
 }
 

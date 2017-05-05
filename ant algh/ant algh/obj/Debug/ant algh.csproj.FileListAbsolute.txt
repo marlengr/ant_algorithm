@@ -55,3 +55,21 @@ C:\Users\lenka\Desktop\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant alg
 C:\Users\lenka\Desktop\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.Form1.resources
 C:\Users\lenka\Desktop\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.Properties.Resources.resources
 C:\Users\lenka\Desktop\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csproj.GenerateResource.Cache
+C:\Users\Kordian\Desktop\New folder\ANT NEW\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe.config
+C:\Users\Kordian\Desktop\New folder\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.exe
+C:\Users\Kordian\Desktop\New folder\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.pdb
+C:\Users\Kordian\Desktop\New folder\ANT NEW\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe
+C:\Users\Kordian\Desktop\New folder\ANT NEW\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.pdb
+C:\Users\Kordian\Desktop\New folder\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csprojResolveAssemblyReference.cache
+C:\Users\Kordian\Desktop\New folder\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.Form1.resources
+C:\Users\Kordian\Desktop\New folder\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.Properties.Resources.resources
+C:\Users\Kordian\Desktop\New folder\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csproj.GenerateResource.Cache
+C:\Users\lenka\Desktop\ANT-NEW222\ANT NEW\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe.config
+C:\Users\lenka\Desktop\ANT-NEW222\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.exe
+C:\Users\lenka\Desktop\ANT-NEW222\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.pdb
+C:\Users\lenka\Desktop\ANT-NEW222\ANT NEW\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe
+C:\Users\lenka\Desktop\ANT-NEW222\ANT NEW\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.pdb
+C:\Users\lenka\Desktop\ANT-NEW222\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csprojResolveAssemblyReference.cache
+C:\Users\lenka\Desktop\ANT-NEW222\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.Form1.resources
+C:\Users\lenka\Desktop\ANT-NEW222\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.Properties.Resources.resources
+C:\Users\lenka\Desktop\ANT-NEW222\ANT NEW\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csproj.GenerateResource.Cache

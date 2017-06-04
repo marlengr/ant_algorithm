@@ -1,6 +1,6 @@
 ﻿namespace ant_algh
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,124 +28,127 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.startButton = new System.Windows.Forms.Button();
+            this.pictureBoxWorld = new System.Windows.Forms.PictureBox();
+            this.StartButton = new System.Windows.Forms.Button();
             this.StopButton = new System.Windows.Forms.Button();
-            this.refreshButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.RefreshButton = new System.Windows.Forms.Button();
+            this.AddAntButton = new System.Windows.Forms.Button();
             this.moveButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.AntCountLabel = new System.Windows.Forms.Label();
+            this.bzduraLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWorld)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBoxWorld
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(700, 350);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
+            this.pictureBoxWorld.Location = new System.Drawing.Point(12, 12);
+            this.pictureBoxWorld.Name = "pictureBoxWorld";
+            this.pictureBoxWorld.Size = new System.Drawing.Size(760, 406);
+            this.pictureBoxWorld.TabIndex = 0;
+            this.pictureBoxWorld.TabStop = false;
+            this.pictureBoxWorld.Paint += new System.Windows.Forms.PaintEventHandler(this.PictureBox_Paint);
             // 
-            // startButton
+            // StartButton
             // 
-            this.startButton.Location = new System.Drawing.Point(12, 389);
-            this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(90, 23);
-            this.startButton.TabIndex = 1;
-            this.startButton.Text = "Start";
-            this.startButton.UseVisualStyleBackColor = true;
-            this.startButton.Click += new System.EventHandler(this.buttonStart_click);
+            this.StartButton.Enabled = false;
+            this.StartButton.Location = new System.Drawing.Point(12, 424);
+            this.StartButton.Name = "StartButton";
+            this.StartButton.Size = new System.Drawing.Size(90, 25);
+            this.StartButton.TabIndex = 1;
+            this.StartButton.Text = "Start";
+            this.StartButton.UseVisualStyleBackColor = true;
+            this.StartButton.Click += new System.EventHandler(this.ButtonStart_click);
             // 
             // StopButton
             // 
-            this.StopButton.Location = new System.Drawing.Point(108, 389);
+            this.StopButton.Enabled = false;
+            this.StopButton.Location = new System.Drawing.Point(108, 424);
             this.StopButton.Name = "StopButton";
-            this.StopButton.Size = new System.Drawing.Size(75, 23);
+            this.StopButton.Size = new System.Drawing.Size(90, 25);
             this.StopButton.TabIndex = 3;
             this.StopButton.Text = "Stop";
             this.StopButton.UseVisualStyleBackColor = true;
-            this.StopButton.Click += new System.EventHandler(this.buttonStop_Click);
+            this.StopButton.Click += new System.EventHandler(this.ButtonStop_Click);
             // 
-            // refreshButton
+            // RefreshButton
             // 
-            this.refreshButton.Location = new System.Drawing.Point(189, 389);
-            this.refreshButton.Name = "refreshButton";
-            this.refreshButton.Size = new System.Drawing.Size(75, 23);
-            this.refreshButton.TabIndex = 4;
-            this.refreshButton.Text = "Refresh";
-            this.refreshButton.UseVisualStyleBackColor = true;
-            this.refreshButton.Click += new System.EventHandler(this.buttonRefresh_Click);
+            this.RefreshButton.Enabled = false;
+            this.RefreshButton.Location = new System.Drawing.Point(204, 424);
+            this.RefreshButton.Name = "RefreshButton";
+            this.RefreshButton.Size = new System.Drawing.Size(90, 25);
+            this.RefreshButton.TabIndex = 4;
+            this.RefreshButton.Text = "Refresh";
+            this.RefreshButton.UseVisualStyleBackColor = true;
+            this.RefreshButton.Click += new System.EventHandler(this.ButtonRefresh_Click);
             // 
-            // button1
+            // AddAntButton
             // 
-            this.button1.Location = new System.Drawing.Point(637, 384);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Add ant";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.buttonAddAnt_Click);
+            this.AddAntButton.Location = new System.Drawing.Point(682, 424);
+            this.AddAntButton.Name = "AddAntButton";
+            this.AddAntButton.Size = new System.Drawing.Size(90, 25);
+            this.AddAntButton.TabIndex = 6;
+            this.AddAntButton.Text = "Add ant";
+            this.AddAntButton.UseVisualStyleBackColor = true;
+            this.AddAntButton.Click += new System.EventHandler(this.ButtonAdd_Click);
             // 
             // moveButton
             // 
-            this.moveButton.Location = new System.Drawing.Point(270, 389);
+            this.moveButton.Location = new System.Drawing.Point(300, 424);
             this.moveButton.Name = "moveButton";
-            this.moveButton.Size = new System.Drawing.Size(75, 23);
+            this.moveButton.Size = new System.Drawing.Size(90, 25);
             this.moveButton.TabIndex = 7;
-            this.moveButton.Text = "button2";
+            this.moveButton.Text = "Move";
             this.moveButton.UseVisualStyleBackColor = true;
-            this.moveButton.Click += new System.EventHandler(this.moveButton_Click);
+            this.moveButton.Click += new System.EventHandler(this.ButtonMove_Click);
             // 
-            // label1
+            // AntCountLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(529, 389);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Liczba mrowek";
+            this.AntCountLabel.AutoSize = true;
+            this.AntCountLabel.Location = new System.Drawing.Point(598, 430);
+            this.AntCountLabel.Name = "AntCountLabel";
+            this.AntCountLabel.Size = new System.Drawing.Size(78, 13);
+            this.AntCountLabel.TabIndex = 8;
+            this.AntCountLabel.Text = "Liczba mrowek";
             // 
-            // label2
+            // bzduraLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(406, 388);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "bzdura";
+            this.bzduraLabel.AutoSize = true;
+            this.bzduraLabel.Location = new System.Drawing.Point(396, 430);
+            this.bzduraLabel.Name = "bzduraLabel";
+            this.bzduraLabel.Size = new System.Drawing.Size(39, 13);
+            this.bzduraLabel.TabIndex = 9;
+            this.bzduraLabel.Text = "bzdura";
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(747, 423);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.bzduraLabel);
+            this.Controls.Add(this.AntCountLabel);
             this.Controls.Add(this.moveButton);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.refreshButton);
+            this.Controls.Add(this.AddAntButton);
+            this.Controls.Add(this.RefreshButton);
             this.Controls.Add(this.StopButton);
-            this.Controls.Add(this.startButton);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Controls.Add(this.StartButton);
+            this.Controls.Add(this.pictureBoxWorld);
+            this.Name = "MainForm";
+            this.Text = "AntAlgorithm";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWorld)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button startButton;
+        private System.Windows.Forms.Button StartButton;
         private System.Windows.Forms.Button StopButton;
-        private System.Windows.Forms.Button refreshButton;
-        public System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button RefreshButton;
+        public System.Windows.Forms.PictureBox pictureBoxWorld;
+        private System.Windows.Forms.Button AddAntButton;
         private System.Windows.Forms.Button moveButton;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label AntCountLabel;
+        private System.Windows.Forms.Label bzduraLabel;
     }
 }
 

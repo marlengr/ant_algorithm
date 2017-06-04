@@ -1,0 +1,8 @@
+C:\Users\Kordian\Desktop\ant_algorithm-master222\ant_algorithm-master\ant algh\ant algh\bin\Release\ant algh.exe.config
+C:\Users\Kordian\Desktop\ant_algorithm-master222\ant_algorithm-master\ant algh\ant algh\bin\Release\ant algh.exe
+C:\Users\Kordian\Desktop\ant_algorithm-master222\ant_algorithm-master\ant algh\ant algh\bin\Release\ant algh.pdb
+C:\Users\Kordian\Desktop\ant_algorithm-master222\ant_algorithm-master\ant algh\ant algh\obj\Release\ant_algh.MainForm.resources
+C:\Users\Kordian\Desktop\ant_algorithm-master222\ant_algorithm-master\ant algh\ant algh\obj\Release\ant_algh.Properties.Resources.resources
+C:\Users\Kordian\Desktop\ant_algorithm-master222\ant_algorithm-master\ant algh\ant algh\obj\Release\ant algh.csproj.GenerateResource.Cache
+C:\Users\Kordian\Desktop\ant_algorithm-master222\ant_algorithm-master\ant algh\ant algh\obj\Release\ant algh.exe
+C:\Users\Kordian\Desktop\ant_algorithm-master222\ant_algorithm-master\ant algh\ant algh\obj\Release\ant algh.pdb

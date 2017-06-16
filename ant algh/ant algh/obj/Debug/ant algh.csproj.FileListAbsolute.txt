@@ -109,3 +109,39 @@ C:\Users\lenka\Desktop\ant_algorithm-master 31.05\ant_algorithm-master\ant algh\
 C:\Users\lenka\Desktop\ant_algorithm-master 31.05\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant_algh.MainForm.resources
 C:\Users\lenka\Desktop\ant_algorithm-master 31.05\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant_algh.Properties.Resources.resources
 C:\Users\lenka\Desktop\ant_algorithm-master 31.05\ant_algorithm-master\ant algh\ant algh\obj\Debug\ant algh.csproj.GenerateResource.Cache
+D:\Cloud\OneDrive\Repositiories\C#\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe.config
+D:\Cloud\OneDrive\Repositiories\C#\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe
+D:\Cloud\OneDrive\Repositiories\C#\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.pdb
+D:\Cloud\OneDrive\Repositiories\C#\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csprojResolveAssemblyReference.cache
+D:\Cloud\OneDrive\Repositiories\C#\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.MainForm.resources
+D:\Cloud\OneDrive\Repositiories\C#\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.Properties.Resources.resources
+D:\Cloud\OneDrive\Repositiories\C#\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csproj.GenerateResource.Cache
+D:\Cloud\OneDrive\Repositiories\C#\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.exe
+D:\Cloud\OneDrive\Repositiories\C#\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.pdb
+C:\Users\Kordian\Desktop\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe.config
+C:\Users\Kordian\Desktop\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.exe
+C:\Users\Kordian\Desktop\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.pdb
+C:\Users\Kordian\Desktop\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe
+C:\Users\Kordian\Desktop\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.pdb
+C:\Users\Kordian\Desktop\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csprojResolveAssemblyReference.cache
+C:\Users\Kordian\Desktop\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.MainForm.resources
+C:\Users\Kordian\Desktop\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.Properties.Resources.resources
+C:\Users\Kordian\Desktop\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csproj.GenerateResource.Cache
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe.config
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.exe
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.pdb
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csprojResolveAssemblyReference.cache
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.MainForm.resources
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.Properties.Resources.resources
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csproj.GenerateResource.Cache
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.pdb
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww - Copy\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe.config
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww - Copy\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.exe
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww - Copy\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.pdb
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww - Copy\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.exe
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww - Copy\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\bin\Debug\ant algh.pdb
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww - Copy\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csprojResolveAssemblyReference.cache
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww - Copy\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.MainForm.resources
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww - Copy\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant_algh.Properties.Resources.resources
+C:\Users\lenka\Desktop\ant_algorithm09-06 (1)newww - Copy\ant_algorithm04-06\ant_algorithm\ant algh\ant algh\obj\Debug\ant algh.csproj.GenerateResource.Cache

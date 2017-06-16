@@ -5,17 +5,15 @@ namespace ant_algh.Classes
 {
     public class Cell
     {
-        //float Pheromon;
-        public Thread Pheromon;
         public Point Point;
-        public int CellPheromonUp;
-        public int CellPheromonBack;
+        public int cellPheromoneUp;
+        public int cellPheromoneBack;
 
-        public Cell(Point point, int cellPheromonUp, int cellPheromonBack)
+        public Cell(Point point, int cellPheromoneUp, int cellPheromoneBack)
         {
             Point = point;
-            CellPheromonUp = cellPheromonUp;
-            CellPheromonBack = cellPheromonBack;
+            this.cellPheromoneUp = cellPheromoneUp;
+            this.cellPheromoneBack = cellPheromoneBack;
         }
     }
 }

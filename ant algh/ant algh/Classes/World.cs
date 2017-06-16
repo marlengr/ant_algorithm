@@ -1,31 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Timers;
 
 namespace ant_algh.Classes
 {
     public class World
     {
-        public Anthill Anthill = new Anthill();
-        public Food Food = new Food();
-        public List<Ant> Ants = new List<Ant>();
-        public List<Cell> Cells = new List<Cell>();
-        public List<Road> Roads = new List<Road>();
-
-        readonly Random _random = new Random();
-
-        public int Random1(int maxValue)
-        {
-            maxValue = _random.Next(1, 700);
-            return maxValue;
-        }
-
-        public int Random2(int minValue)
-        {
-            minValue = _random.Next(1, 300);
-            return minValue;
-        }
-
+        public static Anthill Anthill = new Anthill();
+        public static Food Food = new Food();
+        public static List<Ant> Ants = new List<Ant>();
+        public static List<Cell> Cells = new List<Cell>();
+        public static List<Road> Roads = new List<Road>();
+        public static bool Run = false;
+        public static Timer Timer = new Timer(TimeSpan.FromMilliseconds(250).TotalMilliseconds);
         private static readonly Random Random = new Random();
         private static readonly object SyncLock = new object();
 
@@ -37,22 +25,43 @@ namespace ant_algh.Classes
             }
         }
 
-        public void GenerateCell(int cellNumber, int distance)
+        public static void CellPheromonBack(Point point)
+        {
+            for (int i = 0; i < Cells.Count; i++)
+            {
+                if (point.Equals(Cells[i].Point))
+                {
+                    Cells[i].cellPheromoneBack++;
+                }
+            }
+        }
+
+        public static void CellPheromonBackDec(object sender, ElapsedEventArgs e)
+        {
+            for (int i = 0; i < Cells.Count; i++)
+            {
+                Cells[i].cellPheromoneBack--;
+                if (Cells[i].cellPheromoneBack <= 0)
+                {
+                    Cells[i].cellPheromoneBack = 0;
+                }
+            }
+        }
+
+        public static void GenerateCell(int cellNumber, int distance)
         {
             for (int i = 0; i < cellNumber; i++)
             {
                 for (int j = 0; j < cellNumber; j++)
                 {
-                    //int distance = 40;
-                    //Cell cell = new Cell(new Point(distance + j * distance*2, distance + i * distance), 0, 0);
-                    Cell cell = new Cell(new Point(50 + j*distance, 50 + i*distance/2 ),0,0);
+                    Cell cell = new Cell(new Point(50 + j * distance, 50 + i * distance / 2), 0, 0);
                     Cells.Add(cell);
                 }
             }
-            GenerateRoads(cellNumber);
+            GenerateRoad(cellNumber);
         }
 
-        public void GenerateRoads(int cellNumber)
+        public static void GenerateRoad(int cellNumber)
         {
             for (int x = 0; x < Cells.Count; x++)
             {
